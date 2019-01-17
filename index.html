@@ -7,37 +7,219 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <script src="mc_script.js"></script>
+
 </head>
 
 <body>
     <nav>
-        <a href="#">Desktop</a>
-        <a href="#">Laptop</a>
-        <a href="#">2-in-1</a>
-        <a href="#">Tablets</a>
-        <a href="#">Monitors</a>
-        <a href="#">Accessories</a>
-        <a href="#">Support</a>
+        <div class="desktop">
+            <a href="#">Desktop</a>
+            <a href="#">Laptop</a>
+            <a href="#">2-in-1</a>
+            <a href="#">Tablets</a>
+            <a href="#">Monitors</a>
+            <a href="#">Accessories</a>
+            <a href="#">Support</a>
+        </div>
+        <div class="mobile">
+            <i class="fas fa-bars"></i>
+            <a href="#">Desktop</a>
+            <a href="#">Laptop</a>
+            <a href="#">2-in-1</a>
+            <a href="#">Tablets</a>
+            <a href="#">Monitors</a>
+            <a href="#">Accessories</a>
+            <a href="#">Support</a>
+        </div>
+
     </nav>
     <header>
-
+        <h1>15in MacBook Pro</h1>
+        <h2>Performace laptops from Apple.</h2>
     </header>
     <article>
-        <h1>Purchase a MacBook Pro</h1>
-        <form class="form">
 
-            <h2>Radio Buttons</h2>
-            <div class="inputGroup">
-                <input id="radio1" name="radio" type="radio" />
-                <label for="radio1">Yes</label>
-            </div>
-            <div class="inputGroup">
-                <input id="radio2" name="radio" type="radio" />
-                <label for="radio2">No</label>
-            </div>
-        </form>
+        <div>
+            <h1>Purchase a MacBook Pro</h1>
+            <form class="form">
+                <label>Proccessor</label>
+                <div class="inputGroup">
+                    <input id="processor1" name="processor" type="radio" />
+                    <label for="processor1">Intel i5 Quad Core Proccessor</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="processor2" name="processor" type="radio" checked />
+                    <label for="processor2">Intel i7 Quad Core Processor</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="processor3" name="processor" type="radio" />
+                    <label for="processor3">Intel i7 Hexa Core Processor</label>
+                </div>
 
-        <div style="max-width: 600px; margin: 24px auto;">
+                <label>RAM</label>
+                <div class="inputGroup">
+                    <input id="ram1" name="ram" type="radio" />
+                    <label for="ram1">8GB Dual Channel RAM (2x4GB)</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="ram2" name="ram" type="radio" checked />
+                    <label for="ram2">16GB Dual Channel RAM (2x8GB)</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="ram3" name="ram" type="radio" />
+                    <label for="ram3">32GB Dual Channel RAM (2x16GB)</label>
+                </div>
+
+                <label>Hard Drive</label>
+                <div class="inputGroup">
+                    <input id="ssd1" name="ssd" type="radio" />
+                    <label for="ssd1">256GB SSD</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="ssd2" name="ssd" type="radio" checked />
+                    <label for="ssd2">512GB SSD</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="ssd3" name="ssd" type="radio" />
+                    <label for="ssd3">1TB SSD</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="ssd4" name="ssd" type="radio" />
+                    <label for="ssd4">2TB SSD</label>
+                </div>
+
+                <label>Monitor</label>
+                <div class="inputGroup">
+                    <input id="monitor1" name="monitor" type="radio" />
+                    <label for="monitor1">No Monitor (Built in Display)</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="monitor2" name="monitor" type="radio" />
+                    <label for="monitor2">23in Monitor (HD 1080p)</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="monitor3" name="monitor" type="radio" checked />
+                    <label for="monitor3">25in Monitor (QHD 1440p)</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="monitor4" name="monitor" type="radio" />
+                    <label for="monitor4">27in Monitor (UHD 2160p)</label>
+                </div>
+
+                <label>Keyboard</label>
+                <div class="inputGroup">
+                    <input id="keyboard1" name="keyboard" type="radio" />
+                    <label for="keyboard1">No Keyboard (Built in Keyboard)</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="keyboard2" name="keyboard" type="radio" checked />
+                    <label for="keyboard2">US Magic Keyboard</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="keyboard3" name="keyboard" type="radio" />
+                    <label for="keyboard3">US Magic Keyboard with Numpad</label>
+                </div>
+
+                <label>Mouse & Trackpad</label>
+                <div class="inputGroup">
+                    <input id="mouse1" name="mouse" type="radio" />
+                    <label for="mouse1">No Mouse (Built in Trackpad)</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="mouse2" name="mouse" type="radio" checked />
+                    <label for="mouse2">US Magic Mouse</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="mouse3" name="mouse" type="radio" />
+                    <label for="mouse3">US Magic Mouse & Trackpad</label>
+                </div>
+        </div>
+
+        <div class="scroll">
+            <img src="https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/07/08143514/Macbook-Pro-PNG-Clipart-Free-1024x1024.png"
+                alt="">
+            <h1>Order Information</h1>
+            <label for="fName">First Name*</label>
+            <input type="text" id="fName" name="fName" required>
+
+            <label for="lName">Last Name*</label>
+            <input type="text" id="lName" name="lName" required>
+
+            <label for="street">Street*</label>
+            <input type="text" id="street" name="street" required>
+
+            <label for="city">City*</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">State*</label>
+            <select id="city" name="city" required>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select>
+
+            <label for="zip">Zip Code*</label>
+            <input type="text" id="zip" name="zip" pattern="^\d{5}(?:[-\s]\d{4})?$" required>
+
+            <label for="phone">Phone*</label>
+            <input type="tel" id="zip" name="zip" pattern="((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}" required>
+
+            <input class="button" type="submit" value="Send Order">
+            <input class="button" type="reset" value="Cancel Order">
+            <input class="button" type="button" value="Contact Me">
+            </form>
+        </div>
     </article>
 
     <script src="" async defer></script>

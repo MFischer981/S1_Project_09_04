@@ -1,65 +1,176 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow:300');
 
+/* Body padding and margin set to 0. */
 body {
     padding: 0;
     margin: 0;
 }
 
+/* Header set to display of block. Height and width set to 800px an 100% respectively. Background styles applied to cover background and parallax scroll. */
 header {
     display: block;
-    height: 600px;
+    height: 800px;
     width: 100%;
-    background: url('computer.jpg');
+    background: url('https://images.unsplash.com/photo-1515343480029-43cdfe6b6aae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80');
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center center;
-    filter: grayscale(100%) contrast(150%);
 }
 
+/* Header font styles applied. Set to fixed position so content will scroll over text. */
+header h1 {
+    position: fixed;
+    top: calc(80px + 2vw);
+    text-align: center;
+    color: white;
+    font-family: 'Barlow',
+        sans-serif;
+    font-size: calc(4vw + 32px);
+    margin: 0 auto;
+    width: 100%;
+}
+
+header h2 {
+    position: fixed;
+    top: calc(180px + 1.4vw);
+    text-align: center;
+    color: white;
+    font-family: 'Barlow',
+        sans-serif;
+    font-size: calc(2vw + 16px);
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Navigation styles applied. Fixed to top of page. */
 nav {
     font-family: 'Barlow',
         sans-serif;
     position: fixed;
     top: 0;
-    z-index: 1000;
-    background: rgb(241, 241, 241);
+    z-index: 2000;
+    background: rgb(61, 61, 61);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
     width: 100%;
 }
 
+/* Mobile and desktop navigation display styles set based on screen width. */
+div.desktop {
+    display: block;
+}
+
+div.mobile {
+    display: none;
+}
+
+/* Navicon hidden on desktop. */
+i.fa-bars {
+    display: none;
+}
+
+/* Nav link font styles. Floated to left and added padding. */
 nav a {
     float: left;
     padding: 20px;
     text-decoration: none;
-    color: rgb(61, 61, 61);
+    color: white;
 }
 
+/* Nav hover styles. */
 nav a:hover {
-    color: rgb(178, 186, 190);
+    color: rgb(77, 189, 223);
 }
 
+/* Article set to display of columns. Top set to -200px to place over header. */
 article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
     position: relative;
     width: 80%;
-    top: -200px;
     z-index: 1000;
+    background: white;
+    top: -200px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.75);
     padding: 20px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
 }
 
+/* H1 font styles. */
 h1 {
     font-family: 'Barlow',
         sans-serif;
     color: rgb(61, 61, 61);
 }
 
+/* Label font size set. */
+label {
+    font-size: 18px;
+}
+
+/* Input display and font styles set. */
+input {
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin: 10px 0;
+    position: relative;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    transition: .2s;
+    border: 0;
+    padding: 12px 30px;
+    font-family: 'Barlow',
+        sans-serif;
+    color: rgb(61, 61, 61);
+    font-size: 18px;
+}
+
+/* Input with class of button styles set. */
+input.button {
+    width: 100%;
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
+/* Image styles set to white background with 100% width. Box shadow applied. 20px padding applied. */
+img {
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+
+/* Select set to width of 100%. Background set to white. Display set to block. Margin set to 10px on top and bottom. Position relative. Shadow added. Font styles applied. */
+select {
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin: 10px 0;
+    position: relative;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    transition: .2s;
+    border: 0;
+    font-family: 'Barlow',
+        sans-serif;
+    color: rgb(61, 61, 61);
+    font-size: 18px;
+}
+
+/* Input group font and padding styles applied. Click and hover styles applied. */
 .inputGroup {
     background-color: #fff;
     display: block;
     margin: 10px 0;
     position: relative;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    transition: .2s;
 }
 
+.inputGroup:hover {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+}
+
+/* InputGroup label font styles set. Added padding and width styles. */
 .inputGroup label {
     padding: 12px 30px;
     width: 100%;
@@ -69,22 +180,23 @@ h1 {
     cursor: pointer;
     position: relative;
     z-index: 2;
-    transition: color 1.5s ease-in;
+    transition: color .2s ease-in;
     overflow: hidden;
 }
 
+/*  */
 .inputGroup label:before {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     content: '';
-    background-color: #555555;
+    background-color: rgb(61, 61, 61);
     position: absolute;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%) scale3d(1, 1, 1);
     transform: translate(-50%, -50%) scale3d(1, 1, 1);
-    transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
     z-index: -1;
 }
@@ -106,7 +218,7 @@ h1 {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     cursor: pointer;
-    transition: all 1.5s ease-in;
+    transition: all .2s ease-in;
 }
 
 .inputGroup input:checked~label {
@@ -120,8 +232,8 @@ h1 {
 }
 
 .inputGroup input:checked~label:after {
-    background-color: #54E0C7;
-    border-color: #54E0C7;
+    background-color: rgb(77, 189, 223);
+    border-color: rgb(77, 189, 223);
 }
 
 .inputGroup input {
@@ -139,9 +251,7 @@ h1 {
 }
 
 .form {
-    padding: 0 16px;
     max-width: 550px;
-    margin: 50px auto;
     font-size: 18px;
     font-weight: 600;
     line-height: 36px;
@@ -158,4 +268,41 @@ html {
     font-family: 'Barlow',
         sans-serif;
     color: rgb(61, 61, 61);
+}
+
+/*  */
+@media only screen and (max-width: 768px) {
+    div.desktop {
+        display: none;
+    }
+
+    i.fa-bars {
+        display: block;
+        float: left;
+        padding: 20px;
+        text-decoration: none;
+        color: white;
+        z-index: 2000;
+        width: 100%;
+    }
+
+    div.mobile {
+        display: block;
+    }
+
+    div.mobile a {
+        display: none;
+        width: 100%;
+    }
+
+    div.mobile:hover a {
+        display: block;
+        width: 100%;
+        border-top: rgb(211, 211, 211) 1px solid;
+    }
+
+    article {
+        grid-template-columns: 1fr;
+    }
+
 }
