@@ -20,7 +20,7 @@ header {
 /* Header font styles applied. Set to fixed position so content will scroll over text. */
 header h1 {
     position: fixed;
-    top: calc(80px + 2vw);
+    top: 80px;
     text-align: center;
     color: white;
     font-family: 'Barlow',
@@ -32,7 +32,7 @@ header h1 {
 
 header h2 {
     position: fixed;
-    top: calc(180px + 1.4vw);
+    top: 200px;
     text-align: center;
     color: white;
     font-family: 'Barlow',
@@ -184,7 +184,7 @@ select {
     overflow: hidden;
 }
 
-/*  */
+/* InputGroup label width and height set to 10px. Border radius of 50%. Content set, background color applied. Positioned in center with absolute positioning. Transform position to center element. Opacity of 0, z-index of -1.*/
 .inputGroup label:before {
     width: 10px;
     height: 10px;
@@ -201,6 +201,7 @@ select {
     z-index: -1;
 }
 
+/* White Checkmark inside box. Set to center of circle. Set to 32px by 32px in size. Content set. Border and background applied. */
 .inputGroup label:after {
     width: 32px;
     height: 32px;
@@ -221,6 +222,7 @@ select {
     transition: all .2s ease-in;
 }
 
+/* Code changes styles based on if inputGroup input is checked, */
 .inputGroup input:checked~label {
     color: #fff;
 }
@@ -250,6 +252,7 @@ select {
     visibility: hidden;
 }
 
+/* Form max-width set to 550px. Font styles applied. */
 .form {
     max-width: 550px;
     font-size: 18px;
@@ -257,12 +260,14 @@ select {
     line-height: 36px;
 }
 
+/* Box sizing inherited by all elements. */
 *,
 *::before,
 *::after {
     box-sizing: inherit;
 }
 
+/* Font styles applied. Box sizing set to border box. */
 html {
     box-sizing: border-box;
     font-family: 'Barlow',
@@ -270,7 +275,7 @@ html {
     color: rgb(61, 61, 61);
 }
 
-/*  */
+/* Table size display styles change menu from desktop to mobile design. */
 @media only screen and (max-width: 768px) {
     div.desktop {
         display: none;

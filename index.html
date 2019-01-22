@@ -14,6 +14,8 @@
 </head>
 
 <body>
+
+    <!-- Navigation for desktop and mobile devices. -->
     <nav>
         <div class="desktop">
             <a href="#">Desktop</a>
@@ -34,17 +36,23 @@
             <a href="#">Accessories</a>
             <a href="#">Support</a>
         </div>
-
     </nav>
+
+    <!-- Header with h1 and h2 headings.. -->
     <header>
         <h1>15in MacBook Pro</h1>
         <h2>Performace laptops from Apple.</h2>
     </header>
-    <article>
 
+    <!-- Article with form nested inside. -->
+    <article>
         <div>
             <h1>Purchase a MacBook Pro</h1>
+
+            <!-- Form -->
             <form class="form">
+
+                <!-- Proccessor controls. InputGroups with nested labels and radio inputs. -->
                 <label>Proccessor</label>
                 <div class="inputGroup">
                     <input id="processor1" name="processor" type="radio" />
@@ -59,6 +67,7 @@
                     <label for="processor3">Intel i7 Hexa Core Processor</label>
                 </div>
 
+                <!-- RAM controls. InputGroups with nested labels and radio inputs. -->
                 <label>RAM</label>
                 <div class="inputGroup">
                     <input id="ram1" name="ram" type="radio" />
@@ -73,6 +82,7 @@
                     <label for="ram3">32GB Dual Channel RAM (2x16GB)</label>
                 </div>
 
+                <!-- HD controls. InputGroups with nested labels and radio inputs. -->
                 <label>Hard Drive</label>
                 <div class="inputGroup">
                     <input id="ssd1" name="ssd" type="radio" />
@@ -91,6 +101,7 @@
                     <label for="ssd4">2TB SSD</label>
                 </div>
 
+                <!-- Monitor controls. InputGroups with nested labels and radio inputs. -->
                 <label>Monitor</label>
                 <div class="inputGroup">
                     <input id="monitor1" name="monitor" type="radio" />
@@ -109,6 +120,7 @@
                     <label for="monitor4">27in Monitor (UHD 2160p)</label>
                 </div>
 
+                <!-- Keyboard controls. InputGroups with nested labels and radio inputs. -->
                 <label>Keyboard</label>
                 <div class="inputGroup">
                     <input id="keyboard1" name="keyboard" type="radio" />
@@ -123,6 +135,7 @@
                     <label for="keyboard3">US Magic Keyboard with Numpad</label>
                 </div>
 
+                <!-- Mouse or Trackpad controls. InputGroups with nested labels and radio inputs. -->
                 <label>Mouse & Trackpad</label>
                 <div class="inputGroup">
                     <input id="mouse1" name="mouse" type="radio" />
@@ -138,24 +151,26 @@
                 </div>
         </div>
 
-        <div class="scroll">
+        <div>
+            <!-- Laptop image. -->
             <img src="https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/07/08143514/Macbook-Pro-PNG-Clipart-Free-1024x1024.png"
                 alt="">
             <h1>Order Information</h1>
+            <!-- Label and input box for first name. Set as required. ID matches for. Type set to text. -->
             <label for="fName">First Name*</label>
             <input type="text" id="fName" name="fName" required>
-
+            <!-- Label and input box for last name. Set as required. ID matches for. Type set to text. -->
             <label for="lName">Last Name*</label>
             <input type="text" id="lName" name="lName" required>
-
+            <!-- Label and input box for street. Set as required. ID matches for. Type set to text. -->
             <label for="street">Street*</label>
             <input type="text" id="street" name="street" required>
-
+            <!-- Label and input box for city. Set as required. ID matches for. Type set to text. -->
             <label for="city">City*</label>
             <input type="text" id="city" name="city" required>
-
+            <!-- Label and input box for street. Set as required. ID matches for. Selected list with state options nested inside. -->
             <label for="state">State*</label>
-            <select id="city" name="city" required>
+            <select id="state" name="state" required>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -208,13 +223,13 @@
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
             </select>
-
+            <!-- Label and input box for zip code. Set as required. ID matches for. Type set to text. Pattern with regex applied. -->
             <label for="zip">Zip Code*</label>
             <input type="text" id="zip" name="zip" pattern="^\d{5}(?:[-\s]\d{4})?$" required>
-
+            <!-- Label and input box for phone number. Set as required. ID matches for. Type set to text. Pattern with regex applied. -->
             <label for="phone">Phone*</label>
             <input type="tel" id="zip" name="zip" pattern="((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}" required>
-
+            <!-- Input buttons with values set. A submit, reset, and contact button. -->
             <input class="button" type="submit" value="Send Order">
             <input class="button" type="reset" value="Cancel Order">
             <input class="button" type="button" value="Contact Me">
